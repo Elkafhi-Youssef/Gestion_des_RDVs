@@ -4,18 +4,18 @@
       w-full
       max-w-sm
       mx-auto
-      mt-16
       overflow-hidden
       bg-white
       rounded-lg
       shadow-md
       mb-6
+     mt-24
 
     "
   >
     <div class="px-6 py-4">
-      <h2 class="text-3xl font-bold text-center ">
-        RDVs
+      <h2 class="text-2xl font-bold text-center ">
+        Gestion des rendez-vous
       </h2>
 
       <h3
@@ -27,7 +27,7 @@
           
         "
       >
-        Welcome Back
+        Welcome Back Admin
       </h3>
 
       <p class="mt-1 text-center  ">Login</p>
@@ -82,7 +82,7 @@
               focus:ring
               focus:ring-blue-300
             "
-            type="text"
+            type="password"
             placeholder="Password"
             aria-label="Password"
           />
@@ -161,7 +161,7 @@ export default {
     // },
   },
   created() {
-   
+   this.$store.dispatch("insertPost", this.curentRoute);
   },
 };
 </script>

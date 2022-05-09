@@ -2,18 +2,18 @@
   <div class="hello">
    
     
-    <vs-navbar v-if="name == 'user'">
+    <vs-navbar  v-if="name == 'user'">
       <div>
         <vs-navbar-title>
           RDVS
         </vs-navbar-title>
       </div>
-<div>
+      <div>
       <vs-navbar-item index="0" >
         <router-link class="nav2" to="/">Home</router-link>
         <router-link class="nav2" to="/login">login</router-link>
      
-        <router-link class="nav2" @click="changename"   to="/LoginAdmin">Admin</router-link>
+        <!-- <router-link class="nav2"   to="/LoginAdmin">Admin</router-link> -->
   
       </vs-navbar-item>
       </div>
@@ -44,7 +44,7 @@ export default {
 vs-navbar{
   display: flex;
   flex-direction: row;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(64, 141, 241);
   justify-content: space-around;
   color: white;
   padding: 1%;
@@ -52,7 +52,7 @@ vs-navbar{
 
 }
  .nav2{
-   margin-left: 10%;
+   margin-left: 8rem;
  }
 
  
