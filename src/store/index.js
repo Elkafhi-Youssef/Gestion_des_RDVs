@@ -9,8 +9,7 @@ export default createStore
     log:null,
     user:[],
     ticket:[],
-    
-      curentRouter : 'user',
+    curentRouter : 'user',
   },
   
   getters:{

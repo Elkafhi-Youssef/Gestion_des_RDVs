@@ -58,7 +58,6 @@ const routes = [
     name: "Reservation",
     component: Reservation,
   },
-
 ]
 
 const router = createRouter({

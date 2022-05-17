@@ -94,8 +94,8 @@ export default {
       );
       const data = await response.json();
       this.ref = data.reference;
-      console.log(this.ref);
-      console.log('here');
+      // console.log(this.ref);
+      // console.log('here');
       this.ref = "";
       this.clientData.firstname = "";
       this.clientData.Cin = "";

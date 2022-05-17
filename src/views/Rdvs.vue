@@ -81,7 +81,7 @@ export default {
               typeCons:''
           },
             horairesPr: [
-         { val: "10:00-10-30", etat: false },
+        { val: "10:00-10-30", etat: false },
         { val: "11:00-11-30", etat: false }, 
         { val: "14:00-14-30", etat: false },
         { val: "15:00-15-30", etat: false },
