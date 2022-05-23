@@ -1,4 +1,12 @@
 <template>
+  <div class=" w-screen h-screen border-2 border-red-500"
+    :style="{
+        'background-image': `url(${Image})`,
+        'background-size': 'cover',
+        'border':' 1px solid #eaeaea',
+      }">
+
+  
   <div
     class="
       w-full
@@ -12,6 +20,7 @@
      mt-24
 
     "
+    
   >
     <div class="px-6 py-4">
       <h2 class="text-2xl font-bold text-center ">
@@ -111,6 +120,7 @@
       </form>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -121,6 +131,7 @@ export default {
   name: "LoginAdmin",
   data() {
     return {
+      Image: require("@/assets/background.jpg"),
       email: "",
       password: "",
       curentRoute: "adminhome",
@@ -136,6 +147,9 @@ export default {
       var requestOptions = {
         method: "POST",
         body: JSON.stringify({ email: this.email, password: this.password }),
+        headers: {
+          "Content-Type": "application/json",
+        },
       };
       const res = await fetch(
         "http://localhost/gestionRDVS/backendAPI/Admins/login",
